@@ -430,3 +430,42 @@ footer p{
 ::-webkit-scrollbar {
     width: 10px;
 }
+
+@media screen and (max-width : 768px){
+    .logo-section{
+        width: auto;
+    }
+    .title{
+        width: 250px;
+    }
+    .welcome-section{
+        text-align: center;
+        background-size: 160px;
+        margin-top: 20px;
+    }
+    .welcome-title{
+        color: #ffffff;
+        font-family: infos;
+        font-size: 1em;
+    }
+    header{
+        display: none;
+    }
+    .input__container {
+        margin: 10px auto;
+        position: relative;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.664);
+        padding: 10px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 32px;
+        max-width: 300px;
+        transition: transform 400ms;
+        transform-style: preserve-3d;
+        transform: rotateX(10deg) rotateY(-10deg);
+        perspective: 500px;
+    }
+}
