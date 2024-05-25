@@ -1,0 +1,362 @@
+@font-face {
+    font-family: Wikicraft;
+    src: url(font/Elounda-Regular.ttf);
+}
+
+@font-face {
+    font-family: infos;
+    src: url(font/LTInstitute-1.otf);
+}
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e1e1e;
+    background-size: 160px;
+}
+
+header {
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    position: fixed;
+}
+
+.mc-btn {
+    font-size: 18px;
+    background-color: #008542;
+    color: #fff;
+    text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 0;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: unset;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: 900;
+    transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+  }
+  
+  .mc-btn:before {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+    z-index: -1;
+    background-color: #008542 !important;
+    box-shadow: 0 -4px rgb(21 108 0 / 50%) inset,
+      0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset,
+      4px 0 rgb(21 108 0 / 50%) inset;
+  }
+  
+  .mc-btn:after {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+    transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+  }
+  
+  .mc-btn:hover:before {
+    box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset,
+      -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+  }
+  
+  .mc-btn:hover:after {
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+  }
+  
+  .mc-btn:active {
+    transform: translateY(4px);
+  }
+  
+  .mc-btn:active:after {
+    box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+  }
+  
+
+header img{
+    cursor: pointer;
+}
+  
+nav ul {
+    list-style: none;
+}
+  
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+nav ul li a {
+    color: #000000;
+    font-size: 16px;
+    font-family: infos;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover{
+    color: #cf1010;
+}
+
+.logo-section{
+    text-align: center;
+    padding: 30px;
+    background-color: #bfbfbf;
+    background-image: url(img/paysages/portail_overworld.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s ease;
+}
+
+.title{
+    width: 1000px;
+    height: auto;
+    animation: slideInFromTop 1s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.menu, .up{
+    width: 20px;
+}
+
+.welcome-section{
+    text-align: center;
+    background-size: 160px;
+    margin-top: 20px;
+}
+
+.welcome-title{
+    color: #ffffff;
+    font-family: infos;
+    font-size: 3em;
+}
+
+strong{
+    font-family: Wikicraft;
+    font-weight: 100;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mainContent {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#search-container {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+}
+
+.input__container {
+    margin: 10px auto;
+    position: relative;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.664);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 22px;
+    max-width: 500px;
+    transition: transform 400ms;
+    transform-style: preserve-3d;
+    transform: rotateX(15deg) rotateY(-10deg);
+    perspective: 500px;
+}
+  
+.shadow__input {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(30px);
+    border-radius: 20px;
+    background-color: #999cff;
+    background-image: radial-gradient(at 85% 51%, hsla(60,60%,61%,1) 0px, transparent 50%),
+      radial-gradient(at 74% 68%, hsla(235,69%,77%,1) 0px, transparent 50%),
+      radial-gradient(at 64% 79%, hsla(284,72%,73%,1) 0px, transparent 50%),
+      radial-gradient(at 75% 16%, hsla(283,60%,72%,1) 0px, transparent 50%),
+      radial-gradient(at 90% 65%, hsla(153,70%,64%,1) 0px, transparent 50%),
+      radial-gradient(at 91% 83%, hsla(283,74%,69%,1) 0px, transparent 50%),
+      radial-gradient(at 72% 91%, hsla(213,75%,75%,1) 0px, transparent 50%);
+}
+  
+.input__button__shadow {
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: transform 400ms, background 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 5px;
+}
+  
+.input__button__shadow:hover {
+    background: rgba(255, 255, 255, 0.411);
+}
+  
+.input__search {
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 8px;
+    position: relative;
+}
+
+#result-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-family: infos;
+    color: #fff;
+}
+
+#result-list a{
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.5s ease;
+}
+
+#result-list li {
+    margin: 5px;
+    color: #fff;
+}
+#result-list ul {
+    color: #fff;
+}
+
+#search-advertissement{
+    font-family: netflix;
+}
+
+#hero-section{
+    margin: 30px;
+    padding: 20px;
+    background-color: #101010;
+    background-image: url(img/paysages/portail_overworld.png);
+    background-position: center;
+    backface-visibility: visible;
+    border-radius: 20px;
+}
+
+#hero-section h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 2em;
+}
+
+#hero-section img{
+    border-radius: 20px;
+    width: 500px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 30px 0px #000000;
+}
+
+footer{
+    background-color: #000000;
+    background-size: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+::-webkit-scrollbar {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
