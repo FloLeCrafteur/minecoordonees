@@ -64,6 +64,28 @@
     transition: 1s ease;
 }
 
+.logo-section-barnaby{
+    text-align: center;
+    padding: 30px;
+    background-color: #bfbfbf;
+    background-image: url(https://flolecrafteur.github.io/minecoordonees/img/paysages/maison_barnaby.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s ease;
+}
+
+.logo-section-mateo{
+    text-align: center;
+    padding: 30px;
+    background-color: #bfbfbf;
+    background-image: url(https://flolecrafteur.github.io/minecoordonees/img/paysages/maison_mateo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s ease;
+}
+
 #hero-section-etienne{
     margin: 30px;
     padding: 20px;
@@ -220,6 +242,58 @@
     box-shadow: 0px 0px 30px 0px #000000;
 }
 
+#hero-section-barnaby{
+    margin: 30px;
+    padding: 20px;
+    background-color: #101010;
+    background-image: url(https://flolecrafteur.github.io/minecoordonees/img/paysages/maison_barnaby.png);
+    background-position: center;
+    backface-visibility: visible;
+    border-radius: 20px;
+}
+
+#hero-section-barnaby h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 2em;
+}
+
+#hero-section-barnaby img{
+    border-radius: 20px;
+    width: 500px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 30px 0px #000000;
+}
+
+#hero-section-mateo{
+    margin: 30px;
+    padding: 20px;
+    background-color: #101010;
+    background-image: url(https://flolecrafteur.github.io/minecoordonees/img/paysages/maison_mateo.png);
+    background-position: center;
+    backface-visibility: visible;
+    border-radius: 20px;
+}
+
+#hero-section-mateo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 2em;
+}
+
+#hero-section-mateo img{
+    border-radius: 20px;
+    width: 500px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 30px 0px #000000;
+}
+
 @media screen and (max-width : 768px){
     #hero-section-etienne h1{
         font-size: 1em;
@@ -246,6 +320,13 @@
         font-size: 1em;
     }
     #hero-section-thomas img{
+        width: 200px;
+        height: auto;
+    }
+    #hero-section-barnaby h1{
+        font-size: 1em;
+    }
+    #hero-section-barnaby img{
         width: 200px;
         height: auto;
     }
