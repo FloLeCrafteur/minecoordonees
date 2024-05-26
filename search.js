@@ -5,10 +5,13 @@ const predefinedResults = {
     "Centre des Maisons": "coordonées/overworld/centre_wagons.html",
     "Portail du Nether": "coordonées/overworld/portail_nether.html",
     "Portail du Nether": "coordonées/nether/portail_nether.html",
+    "Maison de Barnaby": "coordonées/overworld/maison_barnaby.html",
     "Maison d'Étienne": "coordonées/overworld/maison_etienne.html",
     "Maison de Florent": "coordonées/overworld/maison_florent.html",
+    "Maison de Matéo": "coordonées/overworld/maison_nmateo.html",
     "Maison de Nathan": "coordonées/overworld/maison_nathan.html",
     "Maison de Thomas": "coordonées/overworld/maison_thomas.html",
+    "Bastion": "coordonées/nether/bastion.html",
     "Forteresse": "coordonées/nether/forteresse.html",
   };
   
