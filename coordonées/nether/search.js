@@ -1,15 +1,18 @@
 // search.js
 const predefinedResults = {
-  "Shrek City": "coordonées/overworld/shrek_city.html",
-  "Base": "coordonées/overworld/shrek_city.html",
-  "Centre des Maisons": "coordonées/overworld/centre_wagons.html",
-  "Portail du Nether": "coordonées/overworld/portail_nether.html",
-  "Portail du Nether": "coordonées/nether/portail_nether.html",
-  "Maison d'Étienne": "coordonées/overworld/maison_etienne.html",
-  "Maison de Florent": "coordonées/overworld/maison_florent.html",
-  "Maison de Nathan": "coordonées/overworld/maison_nathan.html",
-  "Maison de Thomas": "coordonées/overworld/maison_thomas.html",
-  "Forteresse": "coordonées/nether/forteresse.html",
+  "Shrek City": "https://flolecrafteur.github.io/minecoordonees/coordonées/overworld/shrek_city.html",
+  "Base": "https://flolecrafteur.github.io/minecoordonees/coordonées/overworld/shrek_city.html",
+  "Centre des Maisons": "https://flolecrafteur.github.io/minecoordonees/coordonées/overworld/centre_wagons.html",
+  "Portail du Nether": "https://flolecrafteur.github.io/minecoordonees/coordonées/overworld/portail_nether.html",
+  "Portail du Nether": "https://flolecrafteur.github.io/minecoordonees/coordonées/nether/portail_nether.html",
+  "Maison de Barnaby": "https://flolecrafteur.github.io/minecoordonees/coordonées/overworld/maison_barnaby.html",
+  "Maison d'Étienne": "https://flolecrafteur.github.io/minecoordonees/coordonées/overworld/maison_etienne.html",
+  "Maison de Florent": "https://flolecrafteur.github.io/minecoordonees/coordonées/overworld/maison_florent.html",
+  "Maison de Matéo": "https://flolecrafteur.github.io/minecoordonees/coordonées/overworld/maison_nmateo.html",
+  "Maison de Nathan": "https://flolecrafteur.github.io/minecoordonees/coordonées/overworld/maison_nathan.html",
+  "Maison de Thomas": "https://flolecrafteur.github.io/minecoordonees/coordonées/overworld/maison_thomas.html",
+  "Bastion": "https://flolecrafteur.github.io/minecoordonees/coordonées/nether/bastion.html",
+  "Forteresse": "https://flolecrafteur.github.io/minecoordonees/coordonées/nether/forteresse.html",
 };
   
     const searchInput = document.getElementById("search-input");
